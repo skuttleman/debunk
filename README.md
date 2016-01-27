@@ -62,6 +62,22 @@ debunk.whatDoesSeventeenEqual(); //17
 var debunk = require('debunk');
 debunk.whatDoesThreeEqual() * debunk.whatDoesSeventeenEqual(); //51
 ```
+<a name="example4"></a>
+
+###3.4\. Example 4
+
+```js
+var debunk = require('debunk');
+debunk.whatProbablyDoesNotEqualSeventeen() //Random number between 1 and 1,000. Could be 17 though, who knows.
+```
+<a name="example5"></a>
+
+###3.5\. Example 5
+
+```js
+var debunk = require('debunk');
+debunk.whatDoesSeventeenNotEqual(); //Returns 9, because seventeen does not equal 9.
+```
 
 <a name="testing"></a>
 
