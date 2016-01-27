@@ -1,0 +1,11 @@
+{
+  "name": "debunk",
+  "version": "1.0.0",
+  "description": "node module for accessing the current value of 3 and/or 17",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skuttleman",
+  "license": "ISC"
+}
