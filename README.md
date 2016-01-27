@@ -63,6 +63,13 @@ var debunk = require('debunk');
 debunk.whatDoesThreeEqual() * debunk.whatDoesSeventeenEqual(); //51
 ```
 
+###3.4\. Example 4
+
+```js
+var debunk = require('debunk');
+debunk.whatDoesShibleyHaveToSay(); // "Right on"
+```
+
 <a name="testing"></a>
 
 ##4\. Testing
