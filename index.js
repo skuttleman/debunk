@@ -2,10 +2,13 @@ module.exports = {
   whatDoesThreeEqual: function() {
     return 3;
   },
+	whatDoesNotContainThree: function() {
+		noThree = Math.floor((Math.random()*1000000)).toString().replace(/3/g, '1');
+		return parseInt(noThree);
+	},
   whatDoesSeventeenEqual: function() {
     return 17;
   },
-
   whatProbablyDoesNotEqualSeventeen: function(){
     return Math.floor((Math.random()*1000)+1)
   },
