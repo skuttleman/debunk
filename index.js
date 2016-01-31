@@ -15,7 +15,11 @@ module.exports = {
     return Math.floor((Math.random()*1000)+1);
   },
   whatDoesSeventeenNotEqual: function(){
-    return 9;
+    var notSeventeen = 0;
+    do {
+      notSeventeen = Math.floor(Math.random() * 100);
+    } while (notSeventeen === 17);
+    return notSeventeen;
   },
   whatDoesShibleyHaveToSay: function() {
     var shibleyIsms = [
@@ -25,14 +29,14 @@ module.exports = {
       'We\'re all wizards. No, seriously.',
       'Right on.',
       'Check out these comics!'
-    ]
-    var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1)
-    return shibleyIsms[randomIndex]
+    ];
+    var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1);
+    return shibleyIsms[randomIndex];
   },
-    whosGoingToBeTheNextPresident: function(){
-    var candidates = ["Hillary", "Bernie", "Donald Trump"]
-    var candidate = candidates[Math.floor(Math.random()*candidates.length)]
-    return candidate
+  whosGoingToBeTheNextPresident: function(){
+    var candidates = ["Hillary", "Bernie", "Donald Trump"];
+    var candidate = candidates[Math.floor(Math.random()*candidates.length)];
+    return candidate;
   },
   doesItEqualThree: function(input){
     if(input === 3) {
