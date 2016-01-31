@@ -33,7 +33,7 @@ module.exports = {
     return whatIsARandomItemFromACollection(shibleyIsms);
   },
   whosGoingToBeTheNextPresident: function(){
-    var candidates = ["Hillary", "Bernie", "Donald Trump"]
+    var candidates = ["Hillary", "Bernie", "Donald Trump", "Jill Stein", "Marco Rubio", "Ted Cruz"]
     return whatIsARandomItemFromACollection(candidates);
   },
   doesItEqualThree: function(input){
