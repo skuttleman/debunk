@@ -10,7 +10,7 @@ module.exports = {
     return 17;
   },
   whatProbablyDoesNotEqualSeventeen: function(){
-    return Math.floor((Math.random()*1000)+1)
+    return Math.floor((Math.random()*1000)+1);
   },
   whatDoesSeventeenNotEqual: function(){
     return 9;
@@ -23,8 +23,22 @@ module.exports = {
       'We\'re all wizards. No, seriously.',
       'Right on.',
       'Check out these comics!'
-    ]
-    var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1)
-    return shibleyIsms[randomIndex]
+    ];
+    var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1);
+    return shibleyIsms[randomIndex];
+  },
+  doesItEqualThree: function(input){
+    if(input === 3) {
+      return "yes";
+    } else {
+      return "no";
+    }
+  },
+  doesItEqualSeventeen: function(input){
+    if(input === 17) {
+      return "yes";
+    } else {
+      return "no";
+    }
   }
 };
