@@ -1,3 +1,5 @@
+var destupidify = require('destupidify')
+
 module.exports = {
   whatDoesThreeEqual: function() {
     return 3;
@@ -34,16 +36,16 @@ module.exports = {
   },
   doesItEqualThree: function(input){
     if(input === 3) {
-      return "yes";
+      return destupidify.destupidifyAffirmativeVal("yes");
     } else {
-      return "no";
+      return destupidify.destupidifyNegativeVal("no");
     }
   },
   doesItEqualSeventeen: function(input){
     if(input === 17) {
-      return "yes";
+      return destupidify.destupidifyAffirmativeVal("yes");
     } else {
-      return "no";
+      return destupidify.destupidifyNegativeVal("no");
     }
   }
 };
