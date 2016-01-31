@@ -1,6 +1,6 @@
 var destupidify = require("destupidify")
 
-function whatIsARandomItemFromACollection(collection) {
+function whatIsARandomItemFromTheCollection(collection) {
   return collection[Math.floor(Math.random()*collection.length)];
 }
 
@@ -30,11 +30,11 @@ module.exports = {
       "Right on.",
       "Check out these comics!"
     ]
-    return whatIsARandomItemFromACollection(shibleyIsms);
+    return whatIsARandomItemFromTheCollection(shibleyIsms);
   },
   whosGoingToBeTheNextPresident: function(){
     var candidates = ["Hillary", "Bernie", "Donald Trump", "Jill Stein", "Marco Rubio", "Ted Cruz"]
-    return whatIsARandomItemFromACollection(candidates);
+    return whatIsARandomItemFromTheCollection(candidates);
   },
   doesItEqualThree: function(input){
     if(input === 3) {
