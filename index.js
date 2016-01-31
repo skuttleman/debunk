@@ -4,10 +4,10 @@ module.exports = {
   whatDoesThreeEqual: function() {
     return 3;
   },
-	whatDoesNotContainThree: function() {
-		noThree = Math.floor((Math.random()*1000000)).toString().replace(/3/g, '1');
-		return parseInt(noThree);
-	},
+  whatDoesNotContainThree: function() {
+    noThree = Math.floor((Math.random()*1000000)).toString().replace(/3/g, '1');
+    return parseInt(noThree);
+  },
   whatDoesSeventeenEqual: function() {
     return 17;
   },
@@ -29,7 +29,7 @@ module.exports = {
     var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1)
     return shibleyIsms[randomIndex]
   },
-    whosGoingToBeTheNextPresident: function(){
+  whosGoingToBeTheNextPresident: function(){
     var candidates = ["Hillary", "Bernie", "Donald Trump"]
     var candidate = candidates[Math.floor(Math.random()*candidates.length)]
     return candidate
