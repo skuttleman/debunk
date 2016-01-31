@@ -1,5 +1,9 @@
 var destupidify = require('destupidify')
 
+function whatIsARandomItemFromACollection(collection) {
+  return collection[Math.floor(Math.random()*collection.length)];
+}
+
 module.exports = {
   whatDoesThreeEqual: function() {
     return 3;
@@ -26,13 +30,11 @@ module.exports = {
       'Right on.',
       'Check out these comics!'
     ]
-    var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1)
-    return shibleyIsms[randomIndex]
+    return whatIsARandomItemFromACollection(shibleyIsms);
   },
   whosGoingToBeTheNextPresident: function(){
     var candidates = ["Hillary", "Bernie", "Donald Trump"]
-    var candidate = candidates[Math.floor(Math.random()*candidates.length)]
-    return candidate
+    return whatIsARandomItemFromACollection(candidates);
   },
   doesItEqualThree: function(input){
     if(input === 3) {
