@@ -25,5 +25,10 @@ module.exports = {
     ]
     var randomIndex = Math.ceil(Math.random() *  shibleyIsms.length-1)
     return shibleyIsms[randomIndex]
+  },
+    whosGoingToBeTheNextPresident: function(){
+    var candidates = ["Hillary", "Bernie", "Donald Trump"]
+    var candidate = candidates[Math.floor(Math.random()*candidates.length)]
+    return candidate
   }
 };
